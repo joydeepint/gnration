@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond $1 !^index\.php$
+RewriteRule ^(.*?)$ public/index.php [PT,L]
